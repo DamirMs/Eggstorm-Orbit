@@ -22,6 +22,8 @@ namespace Gameplay.Current.Ball_Blast.Blasts
         private void OnEnable()
         {
             ballTargetTrigger.OnTriggered += Triggered;
+
+            // if (simpleAnimationPlayer) simpleAnimationPlayer.enabled = false;
         }
         private void OnDisable()
         {
@@ -37,7 +39,7 @@ namespace Gameplay.Current.Ball_Blast.Blasts
 
         public void PlayAnimation()
         {
-            simpleAnimationPlayer?.PlayAnimation().Forget();
+            // simpleAnimationPlayer?.PlayAnimation().Forget();
         }
 
         private void Triggered(GameObject go)
